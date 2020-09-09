@@ -1,0 +1,46 @@
+2019-01-24 11:24:59.208000 [INFO] amitjoc/locust.main: Starting web monitor at *:8089
+2019-01-24 11:24:59.208000 [INFO] amitjoc/locust.main: Starting Locust 0.9.0
+2019-01-24 11:25:04.918000 [INFO] amitjoc/locust.runners: Hatching and swarming 10 clients at the rate 10 clients/s...
+2019-01-24 11:25:05.927000 [INFO] amitjoc/locust.runners: All locusts hatched: WebsiteUser: 10
+2019-01-24 11:25:06.128000 [ERROR] amitjoc/stderr: Traceback (most recent call last):
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 361, in run
+    self.execute_next_task()
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 387, in execute_next_task
+    self.execute_task(task["callable"], *task["args"], **task["kwargs"])
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 399, in execute_task
+    task(self, *args, **kwargs)
+  File "/home/amitjoc/work/locust/locustio/locustfile/curatepro.py", line 75, in add_product
+    csrftoken = response.cookies['csrftoken']
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/requests/cookies.py", line 328, in __getitem__
+    return self._find_no_duplicates(name)
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/requests/cookies.py", line 399, in _find_no_duplicates
+    raise KeyError('name=%r, domain=%r, path=%r' % (name, domain, path))
+KeyError: "name='csrftoken', domain=None, path=None"
+2019-01-24 11:25:07.149000 [ERROR] amitjoc/stderr: Traceback (most recent call last):
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 361, in run
+    self.execute_next_task()
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 387, in execute_next_task
+    self.execute_task(task["callable"], *task["args"], **task["kwargs"])
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/locust/core.py", line 399, in execute_task
+    task(self, *args, **kwargs)
+  File "/home/amitjoc/work/locust/locustio/locustfile/curatepro.py", line 63, in edit_profile
+    csrftoken = response.cookies['csrftoken']
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/requests/cookies.py", line 328, in __getitem__
+    return self._find_no_duplicates(name)
+  File "/home/amitjoc/.local/lib/python2.7/site-packages/requests/cookies.py", line 399, in _find_no_duplicates
+    raise KeyError('name=%r, domain=%r, path=%r' % (name, domain, path))
+KeyError: "name='csrftoken', domain=None, path=None"
+2019-01-24 11:25:13.302000 [ERROR] amitjoc/stderr: KeyboardInterrupt
+2019-01-24 11:25:13.304000 [ERROR] amitjoc/stderr: 2019-01-24T05:55:13Z
+2019-01-24 11:25:13.304000 [ERROR] amitjoc/stderr: 
+2019-01-24 11:25:13.304000 [INFO] amitjoc/locust.main: Shutting down (exit code 0), bye.
+2019-01-24 11:25:13.305000 [INFO] amitjoc/locust.main: Cleaning up runner...
+2019-01-24 11:25:13.307000 [INFO] amitjoc/locust.main: Running teardowns...
+2019-01-24 11:33:33.213000 [INFO] amitjoc/locust.main: Starting web monitor at *:8089
+2019-01-24 11:33:33.214000 [INFO] amitjoc/locust.main: Starting Locust 0.9.0
+2019-01-24 11:33:42.907000 [ERROR] amitjoc/stderr: KeyboardInterrupt
+2019-01-24 11:33:42.909000 [ERROR] amitjoc/stderr: 2019-01-24T06:03:42Z
+2019-01-24 11:33:42.909000 [ERROR] amitjoc/stderr: 
+2019-01-24 11:33:42.910000 [INFO] amitjoc/locust.main: Shutting down (exit code 0), bye.
+2019-01-24 11:33:42.910000 [INFO] amitjoc/locust.main: Cleaning up runner...
+2019-01-24 11:33:42.911000 [INFO] amitjoc/locust.main: Running teardowns...
